@@ -1,0 +1,71 @@
+.card2,
+.card3,
+.card4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* MENU 2 STYLES */
+.card2 {
+  background-color: map-get($menu2, bg-color);
+  font-family: "Merriweather";
+}
+
+.card2 {
+  & .menu__title {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  & .menu__item {
+    font-size: 20px;
+  }
+  & .menu__item-price {
+    font-weight: normal;
+    font-size: 22px;
+  }
+}
+
+.orange-font {
+  color: $menu2-orange-font;
+}
+
+.pink-font {
+  color: $menu2-pink-font;
+}
+.purple-font {
+  color: $menu2-purple-font;
+}
+
+.card2 {
+  & .menu__title.orange-font::after {
+    border-bottom: solid 3px $menu2-orange-font;
+  }
+  & .menu__title.pink-font::after {
+    border-bottom: solid 3px $menu2-pink-font;
+  }
+  & .menu__title.purple-font::after {
+    border-bottom: solid 3px $menu2-purple-font;
+  }
+}
+
+/* MENU 3 STYLES */
+.card3 {
+  background-color: map-get($menu3, bg-color);
+  font-family: "Kalam";
+  & .menu__title {
+    font-size: 28px;
+  }
+}
+
+/* MENU 4 STYLES */
+.card4 {
+  background-color: map-get($menu4, bg-color);
+  font-family: "Kalam";
+}
+
+.card4 {
+  & .menu__title {
+    font-size: 30px;
+  }
+}

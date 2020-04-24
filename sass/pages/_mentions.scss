@@ -1,0 +1,14 @@
+.mentions__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 80px 0 60px;
+  text-align: center;
+}
+
+.mentions__list {
+  text-align: center;
+  font-size: 20px;
+  & li {
+    margin-bottom: 15px;
+  }
+}

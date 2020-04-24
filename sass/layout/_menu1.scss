@@ -1,0 +1,30 @@
+.card1 {
+  background-color: map-get($menu1, bg-color);
+  font-family: "Kalam";
+}
+
+.menu__header .fa-music {
+  font-size: 70px;
+  margin: 40px 0 10px;
+}
+
+.card1 .menu__title-container {
+  align-items: center;
+  display: flex;
+  width: 80%;
+  margin: 70px 10% 40px;
+}
+
+.card1 .menu__footer {
+  margin: 60px 0 30px;
+}
+
+.menu__footer .fa-music {
+  font-size: 40px;
+}
+
+.menu__footer .menu__restaurant {
+  font-family: map-get($menu1, font-title1);
+  font-size: 40px;
+  margin-left: 15px;
+}

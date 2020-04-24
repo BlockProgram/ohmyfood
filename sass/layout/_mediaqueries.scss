@@ -1,0 +1,273 @@
+@media (max-width: 1200px) {
+  .card1 {
+    & .menu__title {
+      font-size: 28px;
+    }
+    & .menu__item {
+      font-size: 22px;
+    }
+    & .menu__item-price {
+      font-size: 24px;
+    }
+  }
+
+  .card2 {
+    & .menu__title {
+      font-size: 22px;
+    }
+    & .menu__item {
+      font-size: 20px;
+    }
+    & .menu__item-price {
+      font-size: 22px;
+    }
+  }
+
+  .card3 {
+    & .menu__title {
+      font-size: 28px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  /* HOMEPAGE */
+  .menu1 {
+    & .menu__restaurant {
+      font-size: 23px;
+    }
+    & .menu__text {
+      font-size: 30px;
+    }
+  }
+
+  .menu2 {
+    & .menu__restaurant {
+      font-size: 18px;
+    }
+    & .menu__text {
+      font-size: 30px;
+    }
+  }
+
+  .menu3 {
+    & .menu__restaurant {
+      font-size: 28px;
+    }
+    & .menu__text {
+      font-size: 28px;
+    }
+  }
+
+  .menu4 {
+    & .menu__restaurant {
+      font-size: 18px;
+    }
+    & .menu__text {
+      font-size: 28px;
+    }
+  }
+
+  .prochainement__block {
+    font-size: 20px;
+    width: 370px;
+  }
+
+  footer {
+    font-size: 18px;
+  }
+
+  /* MENUS PAGE */
+  .menu__restaurant.card-title {
+    font-size: 26px;
+  }
+
+  .menu__container {
+    box-shadow: 0px 0px 5px 8px rgba(204, 204, 204, 0.15);
+    height: auto;
+    margin: 0 5% 9%;
+    width: 90%;
+  }
+
+  .card1 {
+    & .menu__title {
+      font-size: 26px;
+    }
+    & .menu__item {
+      font-size: 20px;
+    }
+    & .menu__item-price {
+      font-size: 22px;
+    }
+    & .menu__footer .menu__restaurant {
+      font-size: 35px;
+    }
+  }
+
+  .card2 {
+    & .menu__title {
+      font-size: 20px;
+      margin: 0 15px;
+    }
+    & .menu__item {
+      font-size: 18px;
+    }
+    & .menu__item-price {
+      font-size: 20px;
+    }
+  }
+
+  .card3 {
+    & .menu__title {
+      font-size: 26px;
+    }
+    & .menu__item {
+      font-size: 22px;
+    }
+    & .menu__item-price {
+      font-size: 24px;
+    }
+  }
+
+  .card4 {
+    & .menu__title {
+      font-size: 30px;
+    }
+    & .menu__item {
+      font-size: 22px;
+    }
+    & .menu__item-price {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  /* HOMEPAGE */
+  header {
+    font-size: 30px;
+    height: 70px;
+  }
+
+  .menus {
+    align-items: center;
+    grid-template: repeat(4, 1fr) / 1fr;
+    gap: 31px;
+    margin: 40px 50px 0px;
+  }
+
+  .prochainement__block {
+    margin: 30px 0 70px;
+    width: 300px;
+  }
+
+  footer {
+    font-size: 16px;
+  }
+
+  /* MENTIONS PAGE */
+  .mentions__title {
+    font-size: 20px;
+  }
+
+  .mentions__list {
+    font-size: 17px;
+  }
+
+  /* MENUS PAGES */
+  .menu__restaurant.card-title {
+    font-size: 20px;
+    margin: 40px 0 40px;
+  }
+
+  .menu__container {
+    margin: 0 5% 70px;
+  }
+
+  .menu__line {
+    height: 7px;
+  }
+
+  .menu__item-text {
+    margin-right: 10px;
+  }
+
+  .menu__footer {
+    margin: 0 0 30px;
+  }
+
+  .card1 {
+    & .menu__header .fa-music {
+      font-size: 50px;
+    }
+    & .menu__title {
+      font-size: 22px;
+    }
+    & .menu__item {
+      font-size: 18px;
+    }
+    & .menu__item-price {
+      font-size: 20px;
+    }
+    & .menu__footer {
+      margin: 40px 0 30px;
+    }
+    & .menu__footer .menu__restaurant {
+      font-size: 25px;
+    }
+  }
+
+  .card2,
+  .card3,
+  .card4 {
+    & .menu__title-container {
+      margin: 30px 3.5% 40px;
+    }
+    & .menu__title {
+      margin: 0 1.5%;
+    }
+  }
+
+  .card2 {
+    & .menu__title {
+      font-size: 16px;
+    }
+    & .menu__item {
+      font-size: 14px;
+    }
+    & .menu__item-price {
+      font-size: 16px;
+    }
+  }
+
+  .card3 {
+    & .menu__title {
+      font-size: 18px;
+    }
+    & .menu__item {
+      font-size: 16px;
+    }
+    & .menu__item-price {
+      font-size: 18px;
+    }
+  }
+
+  .card4 {
+    & .menu__title {
+      font-size: 20px;
+    }
+    & .menu__item {
+      font-size: 18px;
+    }
+    & .menu__item-price {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .prochainement__block {
+    grid-template-columns: 3fr 1fr;
+    width: 210px;
+  }
+}

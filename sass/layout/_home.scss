@@ -1,0 +1,180 @@
+.menus {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  gap: 31px;
+  margin: 70px 153px 0;
+}
+
+.menu1,
+.menu2,
+.menu3,
+.menu4 {
+  align-items: center;
+  box-shadow: 0px 0px 5px 8px rgba(204, 204, 204, 0.15);
+  display: grid;
+  height: 231px;
+  justify-content: center;
+  width: 100%;
+}
+
+.menu__text-container {
+  display: grid;
+  justify-content: center;
+}
+
+.menu__restaurant {
+  margin: 7px 0 25px;
+  text-align: center;
+}
+
+.menu__text {
+  text-align: center;
+}
+
+.icon-container {
+  background: linear-gradient(90deg, #fc0000, rgba(245, 191, 91, 0.5) 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.fa-music {
+  font-size: 30px;
+}
+
+.menu1 {
+  background-color: map-get($menu1, bg-color);
+  color: map-get($menu1, color);
+  & .menu__restaurant {
+    font-family: map-get($menu1, font-title1);
+    font-size: 25px;
+  }
+  & .menu__text {
+    font-family: map-get($menu1, font-title2);
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+}
+
+.menu2 {
+  background-color: map-get($menu2, bg-color);
+  & .menu__restaurant {
+    background: linear-gradient(155deg, #c77412, #9861ef);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: map-get($menu2, font-title1);
+    font-size: 20px;
+    padding-bottom: 4px;
+  }
+  & .menu__text {
+    color: map-get($menu2, color1);
+    font-family: map-get($menu2, font-title2);
+    font-size: 32px;
+  }
+}
+
+.menu3 {
+  background-color: map-get($menu3, bg-color);
+  & .menu__restaurant {
+    background: linear-gradient(155deg, #0431df, #0887fb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: map-get($menu3, font-title1);
+    font-size: 30px;
+    padding-left: 3px;
+  }
+  & .menu__text {
+    color: map-get($menu3, color2);
+    font-family: map-get($menu3, font-title2);
+    font-size: 30px;
+  }
+}
+
+.menu4 {
+  background-color: map-get($menu4, bg-color);
+  & .menu__restaurant {
+    background: linear-gradient(155deg, #42973c, #bfff7e);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: map-get($menu4, font-title1);
+    font-size: 20px;
+    padding-bottom: 4px;
+  }
+  & .menu__text {
+    color: map-get($menu4, color3);
+    font-family: map-get($menu4, font-title2);
+    font-size: 30px;
+  }
+}
+
+.menu__text-container {
+  animation: zoom 2s infinite cubic-bezier(0.37, 0.41, 0.08, 1.13);
+}
+
+@keyframes zoom {
+  15% {
+    opacity: 0.7;
+  }
+  30% {
+    transform: scale(1.15);
+    opacity: 0.7;
+  }
+  65% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.prochainement {
+  align-items: center;
+  display: grid;
+  height: 100px;
+  justify-content: center;
+  width: 100%;
+  &__block {
+    align-items: center;
+    background-color: $first-color;
+    border-radius: 10px;
+    color: $first-font-color;
+    display: grid;
+    font-size: 22px;
+    grid-template-columns: 2fr 1fr;
+    height: 39px;
+    margin: 40px 0 60px;
+    outline: none;
+    width: 561px;
+  }
+  &__block-text {
+    place-self: center end;
+    margin-right: 6px;
+  }
+  &__block-dot {
+    animation: dots 2s infinite;
+    display: inline;
+    opacity: 0;
+  }
+  &__block-dot:nth-of-type(2) {
+    margin-left: -5px;
+    animation-delay: 0.4s;
+  }
+
+  &__block-dot:nth-of-type(3) {
+    margin-left: -5px;
+    animation-delay: 0.8s;
+  }
+}
+
+@keyframes dots {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}

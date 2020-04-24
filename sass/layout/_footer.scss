@@ -1,0 +1,51 @@
+footer {
+  background-color: $first-color;
+  bottom: 0;
+  color: $first-font-color;
+  display: grid;
+  font-size: 20px;
+  grid-template-columns: 1fr 1fr;
+  height: 43px;
+  left: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.mentions {
+  place-self: center start;
+  margin-left: 20px;
+}
+
+.contact {
+  place-self: center end;
+  margin-right: 20px;
+}
+
+.wiggle-items {
+  animation: wiggle 1s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translateX(0);
+  }
+
+  15% {
+    transform: translateX($wiggle-percentage * -1);
+  }
+
+  30% {
+    transform: translateX($wiggle-percentage);
+  }
+
+  45% {
+    transform: translateX($wiggle-percentage * -1);
+  }
+
+  60% {
+    transform: translateX($wiggle-percentage);
+  }
+  70% {
+    transform: translateX(0);
+  }
+}
