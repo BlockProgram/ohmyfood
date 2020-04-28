@@ -151,9 +151,16 @@
 
   .menus {
     align-items: center;
-    grid-template: repeat(4, 1fr) / 1fr;
+    grid-template: repeat(4, 400px) / 80%;
     gap: 31px;
     margin: 40px 50px 0px;
+  }
+
+  .menu1,
+  .menu2,
+  .menu3,
+  .menu4 {
+    height: 400px;
   }
 
   .prochainement__block {

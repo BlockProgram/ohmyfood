@@ -1,8 +1,9 @@
 .menus {
   display: grid;
-  grid-template: 1fr 1fr / 1fr 1fr;
-  gap: 31px;
-  margin: 70px 153px 0;
+  grid-template: 1fr 1fr / 32% 32%;
+  gap: 60px;
+  justify-content: center;
+  margin: 70px 0 0;
 }
 
 .menu1,
@@ -12,7 +13,7 @@
   align-items: center;
   box-shadow: 0px 0px 5px 8px rgba(204, 204, 204, 0.15);
   display: grid;
-  height: 231px;
+  height: 550px;
   justify-content: center;
   width: 100%;
 }
@@ -112,22 +113,11 @@
 }
 
 .menu__text-container {
-  animation: zoom 2s infinite cubic-bezier(0.37, 0.41, 0.08, 1.13);
-}
-
-@keyframes zoom {
-  15% {
-    opacity: 0.7;
-  }
-  30% {
-    transform: scale(1.15);
-    opacity: 0.7;
-  }
-  65% {
-    opacity: 0.9;
-  }
-  100% {
-    transform: scale(1);
+  transform: scale(1);
+  transition: transform 0.4s cubic-bezier(0.37, 0.41, 0.08, 1.13);
+  &:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
   }
 }
 
