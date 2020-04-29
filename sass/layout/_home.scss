@@ -40,7 +40,6 @@
 
 .icon-container {
   background: linear-gradient(90deg, #fc0000, rgba(245, 191, 91, 0.5) 80%);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
@@ -68,7 +67,6 @@
   background-color: map-get($menu2, bg-color);
   & .menu__restaurant {
     background: linear-gradient(155deg, #c77412, #9861ef);
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: map-get($menu2, font-title1);
@@ -86,7 +84,6 @@
   background-color: map-get($menu3, bg-color);
   & .menu__restaurant {
     background: linear-gradient(155deg, #0431df, #0887fb);
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: map-get($menu3, font-title1);
@@ -104,7 +101,6 @@
   background-color: map-get($menu4, bg-color);
   & .menu__restaurant {
     background: linear-gradient(155deg, #42973c, #bfff7e);
-    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: map-get($menu4, font-title1);
