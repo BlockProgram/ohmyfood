@@ -32,18 +32,21 @@
 
 @media (max-width: 992px) {
   /* HOMEPAGE */
+  .menus {
+    grid-template: 1fr 1fr / 40% 40%;
+  }
   .menu1 {
     & .menu__restaurant {
-      font-size: 23px;
+      font-size: 27px;
     }
     & .menu__text {
-      font-size: 30px;
+      font-size: 32px;
     }
   }
 
   .menu2 {
     & .menu__restaurant {
-      font-size: 18px;
+      font-size: 20px;
     }
     & .menu__text {
       font-size: 30px;
@@ -52,19 +55,19 @@
 
   .menu3 {
     & .menu__restaurant {
-      font-size: 28px;
+      font-size: 30px;
     }
     & .menu__text {
-      font-size: 28px;
+      font-size: 30px;
     }
   }
 
   .menu4 {
     & .menu__restaurant {
-      font-size: 18px;
+      font-size: 20px;
     }
     & .menu__text {
-      font-size: 28px;
+      font-size: 30px;
     }
   }
 
@@ -145,7 +148,7 @@
 @media (max-width: 768px) {
   /* HOMEPAGE */
   header {
-    font-size: 30px;
+    font-size: 28px;
     height: 70px;
   }
 
@@ -161,6 +164,42 @@
   .menu3,
   .menu4 {
     height: 400px;
+  }
+
+  .menu1 {
+    & .menu__restaurant {
+      font-size: 25px;
+    }
+    & .menu__text {
+      font-size: 30px;
+    }
+  }
+
+  .menu2 {
+    & .menu__restaurant {
+      font-size: 18px;
+    }
+    & .menu__text {
+      font-size: 28px;
+    }
+  }
+
+  .menu3 {
+    & .menu__restaurant {
+      font-size: 28px;
+    }
+    & .menu__text {
+      font-size: 28px;
+    }
+  }
+
+  .menu4 {
+    & .menu__restaurant {
+      font-size: 18px;
+    }
+    & .menu__text {
+      font-size: 28px;
+    }
   }
 
   .prochainement__block {

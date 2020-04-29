@@ -173,13 +173,21 @@ header {
   align-items: center;
   box-shadow: 0px 0px 5px 8px rgba(204, 204, 204, 0.15);
   display: grid;
-  height: 550px;
+  height: 700px;
   justify-content: center;
   width: 100%; }
+  .menu1:hover .menu__text-container,
+  .menu2:hover .menu__text-container,
+  .menu3:hover .menu__text-container,
+  .menu4:hover .menu__text-container {
+    transform: scale(1.2);
+    opacity: 0.8; }
 
 .menu__text-container {
   display: grid;
-  justify-content: center; }
+  justify-content: center;
+  transform: scale(1);
+  transition: transform 0.4s cubic-bezier(0.37, 0.41, 0.08, 1.13); }
 
 .menu__restaurant {
   margin: 7px 0 25px;
@@ -203,10 +211,10 @@ header {
   color: #3c1218; }
   .menu1 .menu__restaurant {
     font-family: "Devonshire";
-    font-size: 25px; }
+    font-size: 29px; }
   .menu1 .menu__text {
     font-family: "Kalam";
-    font-size: 32px;
+    font-size: 34px;
     text-transform: uppercase; }
 
 .menu2 {
@@ -217,12 +225,12 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: "Croissant One";
-    font-size: 20px;
+    font-size: 24px;
     padding-bottom: 4px; }
   .menu2 .menu__text {
     color: #c67412;
     font-family: "Playfair Display";
-    font-size: 32px; }
+    font-size: 34px; }
 
 .menu3 {
   background-color: #f9f9f9; }
@@ -232,12 +240,12 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: "Dancing Script";
-    font-size: 30px;
+    font-size: 32px;
     padding-left: 3px; }
   .menu3 .menu__text {
     color: #0887fb;
     font-family: "Averia Sans Libre";
-    font-size: 30px; }
+    font-size: 32px; }
 
 .menu4 {
   background-color: #fcfffd; }
@@ -247,19 +255,12 @@ header {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: "Merienda";
-    font-size: 20px;
+    font-size: 22px;
     padding-bottom: 4px; }
   .menu4 .menu__text {
     color: #72bf56;
     font-family: "Averia Sans Libre";
-    font-size: 30px; }
-
-.menu__text-container {
-  transform: scale(1);
-  transition: transform 0.4s cubic-bezier(0.37, 0.41, 0.08, 1.13); }
-  .menu__text-container:hover {
-    transform: scale(1.2);
-    opacity: 0.8; }
+    font-size: 32px; }
 
 .prochainement {
   align-items: center;
@@ -318,15 +319,22 @@ footer {
   place-self: center end;
   margin-right: 20px; }
 
-.wiggle-items {
-  transition: transform 0.15s ease-in-out;
-  transform: translateX(0); }
-  .wiggle-items:hover {
+.wiggle-items:hover {
+  animation: wiggle 1s ease-in-out infinite; }
+
+@keyframes wiggle {
+  0% {
+    transform: translateX(0); }
+  15% {
+    transform: translateX(-4%); }
+  30% {
     transform: translateX(4%); }
-
-.wiggle-items:nth-of-type(2):hover {
-  transform: translateX(-4%); }
-
+  45% {
+    transform: translateX(-4%); }
+  60% {
+    transform: translateX(4%); }
+  70% {
+    transform: translateX(0); } }
 .menu__restaurant.card-title {
   font-size: 26px;
   font-weight: bold;
@@ -485,25 +493,28 @@ footer {
     font-size: 28px; } }
 @media (max-width: 992px) {
   /* HOMEPAGE */
+  .menus {
+    grid-template: 1fr 1fr / 40% 40%; }
+
   .menu1 .menu__restaurant {
-    font-size: 23px; }
+    font-size: 27px; }
   .menu1 .menu__text {
-    font-size: 30px; }
+    font-size: 32px; }
 
   .menu2 .menu__restaurant {
-    font-size: 18px; }
+    font-size: 20px; }
   .menu2 .menu__text {
     font-size: 30px; }
 
   .menu3 .menu__restaurant {
-    font-size: 28px; }
+    font-size: 30px; }
   .menu3 .menu__text {
-    font-size: 28px; }
+    font-size: 30px; }
 
   .menu4 .menu__restaurant {
-    font-size: 18px; }
+    font-size: 20px; }
   .menu4 .menu__text {
-    font-size: 28px; }
+    font-size: 30px; }
 
   .prochainement__block {
     font-size: 20px;
@@ -555,7 +566,7 @@ footer {
 @media (max-width: 768px) {
   /* HOMEPAGE */
   header {
-    font-size: 30px;
+    font-size: 28px;
     height: 70px; }
 
   .menus {
@@ -569,6 +580,26 @@ footer {
   .menu3,
   .menu4 {
     height: 400px; }
+
+  .menu1 .menu__restaurant {
+    font-size: 25px; }
+  .menu1 .menu__text {
+    font-size: 30px; }
+
+  .menu2 .menu__restaurant {
+    font-size: 18px; }
+  .menu2 .menu__text {
+    font-size: 28px; }
+
+  .menu3 .menu__restaurant {
+    font-size: 28px; }
+  .menu3 .menu__text {
+    font-size: 28px; }
+
+  .menu4 .menu__restaurant {
+    font-size: 18px; }
+  .menu4 .menu__text {
+    font-size: 28px; }
 
   .prochainement__block {
     margin: 30px 0 70px;

@@ -13,14 +13,20 @@
   align-items: center;
   box-shadow: 0px 0px 5px 8px rgba(204, 204, 204, 0.15);
   display: grid;
-  height: 550px;
+  height: 700px;
   justify-content: center;
   width: 100%;
+  &:hover .menu__text-container {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
 }
 
 .menu__text-container {
   display: grid;
   justify-content: center;
+  transform: scale(1);
+  transition: transform 0.4s cubic-bezier(0.37, 0.41, 0.08, 1.13);
 }
 
 .menu__restaurant {
@@ -49,11 +55,11 @@
   color: map-get($menu1, color);
   & .menu__restaurant {
     font-family: map-get($menu1, font-title1);
-    font-size: 25px;
+    font-size: 29px;
   }
   & .menu__text {
     font-family: map-get($menu1, font-title2);
-    font-size: 32px;
+    font-size: 34px;
     text-transform: uppercase;
   }
 }
@@ -66,13 +72,13 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: map-get($menu2, font-title1);
-    font-size: 20px;
+    font-size: 24px;
     padding-bottom: 4px;
   }
   & .menu__text {
     color: map-get($menu2, color1);
     font-family: map-get($menu2, font-title2);
-    font-size: 32px;
+    font-size: 34px;
   }
 }
 
@@ -84,13 +90,13 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: map-get($menu3, font-title1);
-    font-size: 30px;
+    font-size: 32px;
     padding-left: 3px;
   }
   & .menu__text {
     color: map-get($menu3, color2);
     font-family: map-get($menu3, font-title2);
-    font-size: 30px;
+    font-size: 32px;
   }
 }
 
@@ -102,22 +108,13 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: map-get($menu4, font-title1);
-    font-size: 20px;
+    font-size: 22px;
     padding-bottom: 4px;
   }
   & .menu__text {
     color: map-get($menu4, color3);
     font-family: map-get($menu4, font-title2);
-    font-size: 30px;
-  }
-}
-
-.menu__text-container {
-  transform: scale(1);
-  transition: transform 0.4s cubic-bezier(0.37, 0.41, 0.08, 1.13);
-  &:hover {
-    transform: scale(1.2);
-    opacity: 0.8;
+    font-size: 32px;
   }
 }
 

@@ -21,14 +21,31 @@ footer {
   margin-right: 20px;
 }
 
-.wiggle-items {
-  transition: transform 0.15s ease-in-out;
-  transform: translateX(0);
-  &:hover {
-    transform: translateX($wiggle-percentage);
-  }
+.wiggle-items:hover {
+  animation: wiggle 1s ease-in-out infinite;
 }
 
-.wiggle-items:nth-of-type(2):hover {
-  transform: translateX($wiggle-percentage * -1);
+@keyframes wiggle {
+  0% {
+    transform: translateX(0);
+  }
+
+  15% {
+    transform: translateX($wiggle-percentage * -1);
+  }
+
+  30% {
+    transform: translateX($wiggle-percentage);
+  }
+
+  45% {
+    transform: translateX($wiggle-percentage * -1);
+  }
+
+  60% {
+    transform: translateX($wiggle-percentage);
+  }
+  70% {
+    transform: translateX(0);
+  }
 }
